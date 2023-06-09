@@ -1,0 +1,129 @@
+.introSection{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-bottom:5em;
+}
+
+.grayBox{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    top:2em;
+    left:3vw;
+    background-color: #EFEAEA;
+    height: 30em;
+    width:50%;
+    min-width: 350px;
+    max-width: 500px;
+
+    animation:0.8s slideLeftToRight forwards;
+
+}
+
+.grayBox h1{
+    font-family: 'Lora', serif;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.nameTagSection{
+    padding-left:1em;
+    animation:1s slideLeftToRight forwards;
+}
+
+.tagSection{
+    font-family:'Times New Roman', Times, serif;
+    min-width: 105px;
+    text-align: left;
+
+}
+.tagSection > span{
+    margin-left:1em;
+}
+
+.tagSection > .tapTwo{
+    margin-left:2em;
+}
+
+
+.nameTag{
+    text-align: left;
+    font-size:2em;
+    padding:0.5em;
+    margin:0.8em;
+    background-color: white;
+    color:#D7BD60;
+
+}
+.nameTag:first-child{
+    width:8em;
+}
+.nameTag:last-child{
+    width:13em;
+}
+
+.nameTag > div{
+    animation: 1s fadeIn forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+
+.brownBox{
+    overflow: visible;
+    position: relative;
+    padding:2em;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #FAEEDE;
+    height: 35em;
+    width:50%;
+    min-width: 300px;
+}
+
+@keyframes slideLeftToRight {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }   
+    100%{
+        opacity: 100;
+    }
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    .grayBox{
+        left:0;
+        margin-bottom: 5em;
+    }
+    .nameTag{
+        font-size:1.3em;
+    }
+
+    .tagSection{
+        position: relative;
+        left:3em;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');

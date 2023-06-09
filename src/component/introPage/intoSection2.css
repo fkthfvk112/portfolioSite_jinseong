@@ -1,0 +1,130 @@
+.section{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5em;
+    padding:5em;
+    flex-direction: column;
+}
+
+.brownBox2{
+    position: relative;
+    padding:5em;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    background-color: #FAEEDE;
+    height: 25em;
+    width:80vw;
+    min-width: 400px;
+}
+
+
+
+.grayBox2{
+    margin-left: 30vw;
+    position: relative;
+    top:5em;
+    z-index: 1;
+    padding:2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EFEAEA;
+    height: 20em;
+    width:45em;
+    min-width: 800px;
+}
+.grayBox2 > p{
+    text-align: right;
+    font-size:1.3em;
+}
+
+.cvBtn{
+    position: relative;
+    top:1em;
+    background-color: #5F6CAF;
+    border: none;
+    color:white;
+    padding:0.5em 1em 0.5em 1em;
+    font-size: 2em;
+}
+
+
+.grayBox2-ani{
+    animation: 1s slideRightToLeft forwards;
+
+}
+.chartSection{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    max-height: 100px;
+}
+
+.chart{
+    display: block;
+    background-color: #EB8888;
+    width:6em;
+    margin:0.5em;
+}
+.chart:nth-child(1){
+    height:1em;
+}
+.chart:nth-child(2){
+    height:5em;
+}
+.chart:nth-child(3){
+    position: relative;
+    height:500px;
+    z-index: 1;
+}
+
+.infoP{
+    word-wrap: break-word;
+    text-align: start;
+    margin-top: 3em;
+    font-size: 1.4em;
+}
+
+.myPrice{
+    background-color: white;
+    padding:0.3em 1em 0.3em 1em;
+}
+@keyframes slideRightToLeft {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .grayBox2{
+        margin:0;
+        margin-bottom: 30em;
+    }
+
+    .infoP{
+        font-size: 1.2em;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    .grayBox2 > p{
+        font-size: 1em;
+    }
+    .infoP{
+        font-size: 1em;
+    }
+    .brownBox2{
+        justify-content: center;
+        align-items: center;
+    }
+}

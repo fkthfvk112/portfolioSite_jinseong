@@ -1,0 +1,11 @@
+.nav_container{
+    position:sticky;
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    background-color: transparent;
+}
+
+.nav_container > a{
+    margin:1em;
+}
