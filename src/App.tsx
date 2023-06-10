@@ -3,6 +3,9 @@ import Nav from './Nav.tsx'
 import Intro from './component/introPage/Intro.tsx'
 import Intro2 from './component/introPage/introSectionTwo.tsx'
 import Intro3 from './component/introPage/introSectionThree.tsx'
+
+
+
 function App() {
   //let aa:JSX.Element = <h1>gfd</h1>;
 

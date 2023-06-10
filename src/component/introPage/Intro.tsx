@@ -9,12 +9,12 @@ export default function Intro(){
                 <div className='nameTagSection'>
                     <div className='nameTag'>
                         <div>
-                        정진성입니다.
+                            Welcome to
                         </div>
                     </div>
                     <div className='nameTag'>
                         <div>
-                        웹사이트를 만듭니다.
+                            Jinseong's Portpolio
                         </div>
                     </div>
                 </div>
